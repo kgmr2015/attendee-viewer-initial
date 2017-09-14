@@ -1,0 +1,12 @@
+--- 
+applications: 
+  - 
+    buildpack: java_buildpack
+    env: 
+      SPRING_PROFILES_ACTIVE: dev
+    instances: 1
+    memory: 1G
+    name: attendee-viewer
+    services: 
+      - config-repo
+    timeout: 170
